@@ -1,0 +1,83 @@
+.btn {
+  @include reset-btn;
+  cursor: pointer;
+
+  position: relative;
+
+  display: inline-flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.2rem 1.6rem;
+  border: var(--border-md-medium);
+  border-radius: var(--radius-md);
+
+  font-size: 1.4rem;
+  font-weight: var(--font-medium);
+  line-height: 1;
+  color: var(--color-heading);
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  background: var(--color-body);
+
+  transition: var(--transition);
+
+  &:hover, &:focus, &:active {
+    color: var(--color-heading);
+    background: var(--color-box);
+  }
+
+  & > svg, & > img {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  & > small {
+    padding: 0.15em 0 0 0.25em;
+    font-size: 2rem;
+    font-weight: var(--font-regular);
+  }
+
+  // .btn_cancel
+  &_cancel {
+    border-color: var(--color-border-regular);
+    color: var(--color-heading);
+    background: var(--color-border-regular);
+
+    &:hover, &:focus, &:active {
+      border-color: var(--color-border-medium);
+      color: var(--color-heading);
+      background: var(--color-border-medium);
+    }
+  }
+
+  @each $color in $accent-color-list {
+    &_#{$color} {
+      border-color: var(--color-#{$color});
+      color: var(--color-#{$color}-text);
+      background: var(--color-#{$color});
+
+      &:hover, &:focus, &:active {
+        border-color: var(--color-#{$color}-hover);
+        color: var(--color-#{$color}-text);
+        background: var(--color-#{$color}-hover);
+      }
+    }
+  }
+
+  // .btn_disabled
+  &_disabled,
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+
+  // .btn_fit
+  &_fit {
+    width: 100%;
+  }
+}
