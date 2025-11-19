@@ -1,0 +1,55 @@
+{
+  "name": "valte",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Tokmachev Petr",
+  "authorUrl": "https://github.com/vladimirovicp",
+  "description": "Всё о Alt linux!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vladimirovicp/layout-valte"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "prod": "vite build",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:js": "eslint ./",
+    "lint:js:fix": "eslint ./ --fix",
+    "lint:css": "stylelint ./src/sass/**/*.{sass,scss}",
+    "lint:css:fix": "stylelint ./src/sass/**/*.{sass,scss} --fix"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.39.1",
+    "@vituum/vite-plugin-twig": "^1.1.0",
+    "autoprefixer": "^10.4.22",
+    "dotenv": "^17.2.3",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.32.0",
+    "fastify": "^5.6.2",
+    "globals": "^16.5.0",
+    "minimist": "^1.2.8",
+    "nodemon": "^3.1.11",
+    "sass": "^1.94.1",
+    "stylelint": "^16.25.0",
+    "stylelint-config-clean-order": "^7.0.0",
+    "stylelint-config-standard-scss": "^16.0.0",
+    "stylelint-scss": "^6.12.1",
+    "vite": "^7.2.2",
+    "vite-plugin-imagemin": "^0.6.1",
+    "vite-plugin-minify": "^2.1.0",
+    "vituum": "^1.2.0"
+  },
+  "dependencies": {
+    "@tabler/icons": "^3.35.0",
+    "reseter.css": "^2.0.0"
+  }
+}
