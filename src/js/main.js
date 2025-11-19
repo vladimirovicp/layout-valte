@@ -1,4 +1,3 @@
-import '@/js/component/watermark';
 import '@/js/component/logger';
 
 import '@/js/component/data-copy';

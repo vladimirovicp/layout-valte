@@ -12,6 +12,7 @@ const isDev = !isProd;
 
 const packageData = JSON.parse(fs.readFileSync('./package.json'));
 
+
 const appData = {
   APP_IS_DEV: isDev,
   APP_IS_PROD: isProd,
