@@ -1,0 +1,10 @@
+# IGNORE ALL
+**
+
+# EXCEPT
+!public/
+!src/
+!vite/
+!.env
+!package.json
+!vite.config.*
