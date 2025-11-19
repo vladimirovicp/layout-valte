@@ -27,6 +27,7 @@ html {
 }
 
 body {
+  
   position: relative;
 
   overflow-x: hidden;
@@ -190,6 +191,8 @@ code, kbd, pre, samp {
   flex: 1 0 auto;
   flex-direction: column;
 }
+
+
 
 @import "component/box";
 @import "component/button";
