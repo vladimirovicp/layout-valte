@@ -1,7 +1,6 @@
 {% set title = title is not defined or title is null ? APP_NAME_FORMATTED : title ~ ' - ' ~ APP_NAME_FORMATTED %}
 {% set locale = meta.locale|default('en-US') %}
 {% set description = meta.description|default(APP_DESCRIPTION) %}
-{% set keywords = meta.keywords|default(APP_KEYWORDS) %}
 {% set image = meta.image %}
 
 <!DOCTYPE html>
@@ -19,7 +18,6 @@
 
   <!-- Description -->
   <meta name="description" content="{{ description }}">
-  <meta name="keywords" content="{{ keywords }}">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">

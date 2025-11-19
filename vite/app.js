@@ -27,7 +27,6 @@ const appData = {
   APP_REPOSITORY: packageData.repository?.url,
 
   APP_DESCRIPTION: packageData.description,
-  APP_KEYWORDS: packageData.keywords,
 };
 
 const envData = {};

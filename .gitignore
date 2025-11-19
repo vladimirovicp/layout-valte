@@ -12,6 +12,7 @@ node_modules
 cache
 dist
 dist-ssr
+docs
 coverage
 *.local
 
