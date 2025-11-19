@@ -3,29 +3,38 @@
   "version": "1.0.0",
   "private": true,
   "author": "Tokmachev Petr",
-  "authorUrl": "https://github.com/vladimirovicp",
   "description": "Всё о Alt linux!",
+  "scripts": {
+    "dev": "vite dev",
+    "prod": "vite build",
+    "build": "vite build",
+    "preview": "vite preview",
+    "docs": "vite build --base=/vite-frontend-starter --outDir=./docs",
+    "lint:js": "eslint ./",
+    "lint:js:fix": "eslint ./ --fix",
+    "lint:css": "stylelint ./src/sass/**/*.{sass,scss}",
+    "lint:css:fix": "stylelint ./src/sass/**/*.{sass,scss} --fix",
+    "backend": "nodemon backend"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vladimirovicp/layout-valte"
+    "url": "git+https://github.com/vladimirovicp/layout-valte.git"
   },
   "type": "module",
   "engines": {
     "node": ">=22.14.0"
   },
-  "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "prod": "vite build",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint:js": "eslint ./",
-    "lint:js:fix": "eslint ./ --fix",
-    "lint:css": "stylelint ./src/sass/**/*.{sass,scss}",
-    "lint:css:fix": "stylelint ./src/sass/**/*.{sass,scss} --fix"
+  "keywords": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vladimirovicp/layout-valte/issues"
+  },
+  "homepage": "https://github.com/vladimirovicp/layout-valte",
+  "dependencies": {
+    "@tabler/icons": "^3.35.0",
+    "reseter.css": "^2.0.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.39.1",
     "@vituum/vite-plugin-twig": "^1.1.0",
     "autoprefixer": "^10.4.22",
@@ -34,10 +43,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.32.0",
-    "fastify": "^5.6.2",
-    "globals": "^16.5.0",
     "minimist": "^1.2.8",
-    "nodemon": "^3.1.11",
     "sass": "^1.94.1",
     "stylelint": "^16.25.0",
     "stylelint-config-clean-order": "^7.0.0",
@@ -47,9 +53,5 @@
     "vite-plugin-imagemin": "^0.6.1",
     "vite-plugin-minify": "^2.1.0",
     "vituum": "^1.2.0"
-  },
-  "dependencies": {
-    "@tabler/icons": "^3.35.0",
-    "reseter.css": "^2.0.0"
   }
 }
