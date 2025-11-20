@@ -1,0 +1,19 @@
+.header {
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+        
+}
+
+.nav{
+    &__list{
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__item{
+        list-style-type: none;
+    }
+}

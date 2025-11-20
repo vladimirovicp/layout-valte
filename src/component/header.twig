@@ -1,21 +1,30 @@
 <header id="header" class="header">
   <div class="container">
-    <div class="header__wrapper">
-      <a href="/" class="header__logo">
-        <img class="header__logo-image" src="/src/img/alt-linux-logo.svg" alt="alt Linux Logo" height="24">
-        <span class="header__logo-text">{{ APP_NAME_FORMATTED }}</span>
+
+    <div class="container header__container">
+
+      <a href="/" class="logo header__logo">
+        <img src="/src/img/alt-linux-logo.svg" alt="vALTe" class="logo__image">
+        <span class="logo__text">vALTe</span>
       </a>
 
-      <nav class="header__nav">
-        {% for nav in header %}
-        <a href="{{ nav.link }}" class="header__nav-item {% if active_nav == nav.link %}active{% endif %}">{{ nav.name }}</a>
-        {% endfor %}
+
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+           {% for nav in header %}
+              <li class="nav__item {% if active_nav == nav.link %}active{% endif %}">
+                <a href="{{ nav.link }}" class="nav__link">{{ nav.name }}</a>
+              </li>
+           {% endfor %}
+        </ul>
       </nav>
 
-      <div class="header__appearance">
-        <span data-theme-set="dark" class="header__appearance-item" title="Switch to dark theme">{{ source('@ti/sun.svg') }}</span>
-        <span data-theme-set="light" class="header__appearance-item" title="Switch to light theme">{{ source('@ti/moon.svg') }}</span>
-      </div>
+      {# <button class="burger header__burger" type="button" aria-label="Открыть меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button> #}
+
     </div>
   </div>
 </header>

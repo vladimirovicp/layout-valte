@@ -6,22 +6,23 @@
     box-sizing: border-box;
 }
 
-html{
-
-    scroll-behavior: smooth;
-
+html {
+  scroll-behavior: smooth;
+  font-size: 1.3vw;
+  // font-size: 10/(768/100); // где 768 это ширина
 }
 
 body {
 
     font-family: 'Golos Text', sans-serif ;
 
+    font-size: 2.4rem;
 }
 
 .container{
-
+  width: 100%;
+  padding: 0 2rem;
 }
-
 
 
 /* Базовые стили - для мобильных телефонов (все, что меньше 768px) */
@@ -29,19 +30,61 @@ body {
 /* Планшеты (вертикальная ориентация) и небольшие ноутбуки */
 @media (min-width: 768px) {
   /* Стили для ширины от 768px и выше */
+
+    html {
+      font-size: 0.977vw;
+      // font-size: 10/(1024/100); // где 1024 это ширина
+    }
+
+    .container{
+      width: 76.8rem;
+      margin: 0 auto;
+    }
 }
 
 /* Планшеты (горизонтальная ориентация) и ноутбуки */
 @media (min-width: 1024px) {
   /* Стили для ширины от 1024px и выше */
+
+    html {
+      font-size: 0.78vw;
+      // font-size: 10/(1280/100); // где 1280 это ширина
+    }
+
+    .container{
+      width: 102.4rem;
+      margin: 0 auto;
+    }
+
 }
 
 /* Большие ноутбуки и мониторы */
 @media (min-width: 1280px) {
   /* Стили для ширины от 1280px и выше */
+
+    html {
+      font-size: 0.695vw;
+      // font-size: 10/(1440/100); // где 1440 это ширина
+    }
+
+    .container{
+      width: 128rem;
+      margin: 0 auto;
+    }
+
 }
 
 /* Очень большие экраны, ТВ */
 @media (min-width: 1440px) {
   /* Стили для ширины от 1440px и выше */
+
+  html{
+    font-size: 10px;
+  }
+
+  .container{
+    width: 144rem;
+    margin: 0 auto;
+  }
+
 }

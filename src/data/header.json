@@ -4,11 +4,11 @@
     "link": "/"
   },
   {
-    "name": "Guide",
+    "name": "none",
     "link": "/guide"
   },
   {
-    "name": "Components",
-    "link": "/components"
+    "name": "community",
+    "link": "/community"
   }
 ]
